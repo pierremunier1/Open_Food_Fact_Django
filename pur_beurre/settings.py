@@ -57,6 +57,7 @@ INSTALLED_APPS = [
 
 ]
 AUTH_USER_MODEL = 'users.CustomUser'
+AUTHENTICATION_BACKENDS = ['users.backend.EmailBackend']
 
 
 MIDDLEWARE = [
